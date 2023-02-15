@@ -30,4 +30,7 @@ export class AppComponent implements OnInit {
       "Date": new Date()
     }); // Replace Payload as per your event schema and design
   }
+  onClickOULSame(){
+    //need to write login here for On user login
+  }
 }

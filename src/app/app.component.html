@@ -16,13 +16,16 @@
     <button (click)="handleEventPushClick()">Push Event</button>
   </div>
 </div> -->
-<h3>On User Login</h3>
-<input type="text" id="constantOUL" class="textInput" /><input
+<div>
+  <h3>On User Login</h3>
+  <input type="text" id="constantOUL" class="textInput" /><input
   type="text"
   disabled
   value="@gmail.com"
   class="textInput"
   />
-  <button onclick="onClickOULSame()" class="inputBtn">OUL</button>
+  <button (click)="onClickOULSame()">OUL</button>
+</div>
+
 
 <router-outlet></router-outlet>
