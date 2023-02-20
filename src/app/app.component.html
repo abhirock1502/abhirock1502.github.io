@@ -16,16 +16,36 @@
     <button (click)="handleEventPushClick()">Push Event</button>
   </div>
 </div> -->
+<hr> 
+
 <div>
   <h3>On User Login</h3>
-  <input type="text" id="constantOUL" class="textInput" /><input
-  type="text"
-  disabled
-  value="@gmail.com"
-  class="textInput"
-  />
+  <input type="text" [(ngModel)]="emailUserName" class="textInput"/>
+  <input type="text" value="@gmail.com" disabled/>
   <button (click)="onClickOULSame()">OUL</button>
 </div>
+<hr> 
 
+<div>
+  <h3>On User Login Identity</h3>
+  <input type="text" [(ngModel)]="userIdentity" class="textInput"/>
+  <input type="text" value="@gmail.com" disabled/>
+  <button (click)="onClickOULIdentitySame()">OUL Identity</button>
+</div>
+<hr> 
+
+<div>
+  <h3>Profile Push</h3>
+  <input type="text" [(ngModel)]="constantPP" class="textInput"/>
+  <input type="text" disabled value="@gmail.com" class="textInput"/>
+  <button (click)="onClickPPSame()" >PP</button>
+</div>
+<hr> 
+
+<div>
+  <h3>PP Identity</h3>
+  <input type="text" [(ngModel)]="constantPPIdentity" class="textInput"/>
+  <button (click)="onClickPPIdentitySame()" >PP Identity</button>
+</div>
 
 <router-outlet></router-outlet>
